@@ -1,15 +1,16 @@
-# 🚀 Welcome to your new awesome project!
+# News from Rover 
 
-This project has been created using **webpack-cli**, you can now run
+[Site Link](newsfromrover.netlify.app)
 
-```
-npm run build
-```
+---
 
-or
+### Codice
 
-```
-yarn build
-```
+Il file `index.js` è stato strutturato per essere estremamente leggebile e ben suddiviso.
+Le funzioni sono state scritte passando parametri così da poter essere richimate in base alle necessità.
 
-to bundle your application
+---
+
+### Grafica
+
+In questo progetto la precedenza è stata data sicuramente al codice ma ho tentato di dare un tocco di simpatia alla pagina con un tema 'marziano'.
