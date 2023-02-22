@@ -1,6 +1,6 @@
 # News from Rover 
 
-[Site Link](newsfromrover.netlify.app)
+[Site Link](https://newsfromrover.netlify.app)
 
 ---
 
