@@ -1,3 +1,5 @@
+import '../css/styles.css'
+
 // API
 
 let NEWS_API = 'https://hacker-news.firebaseio.com/v0/newstories.json';
