@@ -2,8 +2,8 @@ import '../css/styles.css'
 
 // API
 
-NEWS_API = 'https://hacker-news.firebaseio.com/v0/newstories.json'
-NEWS_LINK = 'https://hacker-news.firebaseio.com/v0/item/'
+const NEWS_API = 'https://hacker-news.firebaseio.com/v0/newstories.json'
+const NEWS_LINK = 'https://hacker-news.firebaseio.com/v0/item/'
 
 // Variabili
 
