@@ -1,4 +1,5 @@
 import '../css/styles.css'
+const axios = require('axios');
 
 // API
 
@@ -23,19 +24,21 @@ moreNewsButton.addEventListener('click', getMoreNews);
 //Funzione per accedere alle prime dieci notizie
 
 async function getNews(){
-  let newsIdArray = [];
+  try{
+    let newsIdArray = [];
 
-  let response = await fetch(NEWS_API);
-  let data = await response.json();
-  newsIdArray = data;
+    let response = await axios.get(NEWS_API);
+    let data = await response.json();
+    newsIdArray = data;
 
-  for (let i = startId; i < endId; i++) { 
-    let newsUrl = NEWS_LINK + newsIdArray[i] + '.json';
-    let newsresponse = await fetch(newsUrl);
-    let newsData = await newsresponse.json();
+    for (let i = startId; i < endId; i++) { 
+      let newsUrl = NEWS_LINK + newsIdArray[i] + '.json';
+      let newsresponse = await fetch(newsUrl);
+      let newsData = await newsresponse.json();
 
-    createCard(newsData.title, newsData.url, newsData.time);
-  };
+      createCard(newsData.title, newsData.url, newsData.time);
+    };
+  } catch (e) { alert("We can't get signals from the rover, check back later!" + e.message)};
 };
 
 // funzione per accedere alle notizie successive
