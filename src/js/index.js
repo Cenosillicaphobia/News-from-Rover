@@ -16,12 +16,19 @@ let endId = 10
 // Elementi DOM
 
 let moreNewsButton = document.querySelector('.load-more');
+let loader = document.querySelector('.loader');
 
 //Funzioni pagina
 
 window.onload = getNews();
 
+window.onload = loading();
+
 moreNewsButton.addEventListener('click', getMoreNews);
+
+//Funzione loading
+
+function loading() {setTimeout(() => loader.setAttribute('class', 'loader-hidden'),5000)};
 
 //Funzione per accedere alle prime dieci notizie
 
