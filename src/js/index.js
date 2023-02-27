@@ -28,17 +28,17 @@ async function getNews(){
     let newsIdArray = [];
 
     let response = await axios.get(NEWS_API);
-    let data = await response.json();
+    let data = await response;
     newsIdArray = data;
 
     for (let i = startId; i < endId; i++) { 
       let newsUrl = NEWS_LINK + newsIdArray[i] + '.json';
-      let newsresponse = await fetch(newsUrl);
-      let newsData = await newsresponse.json();
+      let newsresponse = await axios.get(newsUrl);
+      let newsData = await newsresponse;
 
       createCard(newsData.title, newsData.url, newsData.time);
     };
-  } catch (e) { alert("We can't get signals from the rover, check back later!" + e.message)};
+  } catch (e) { alert("We can't get signals from the rover, check back later! " + e.message)};
 };
 
 // funzione per accedere alle notizie successive
