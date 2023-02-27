@@ -28,13 +28,12 @@ async function getNews(){
     let newsIdArray = [];
 
     let response = await axios.get(NEWS_API);
-    let data = await response;
-    newsIdArray = data;
+    newsIdArray = response;
 
     for (let i = startId; i < endId; i++) { 
       let newsUrl = NEWS_LINK + newsIdArray[i] + '.json';
       let newsresponse = await axios.get(newsUrl);
-      let newsData = await newsresponse.json();
+      let newsData = newsresponse;
 
       createCard(newsData.title, newsData.url, newsData.time);
     };
