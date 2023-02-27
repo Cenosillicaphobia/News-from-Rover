@@ -1,5 +1,7 @@
 import '../css/styles.css'
 const axios = require('axios');
+const lodash = require('lodash');
+
 
 // API
 
@@ -81,7 +83,7 @@ document.querySelector('.card-container').appendChild(cardLink);
 // Funzione per convertire la data
 
 function dataConverter(nDate){
-  let dateMilliseconds = nDate * 1000;
+  let dateMilliseconds = _.multiply(nDate, 1000)
   let dateObject = new Date(dateMilliseconds);
   let options = {
     day: 'numeric',
