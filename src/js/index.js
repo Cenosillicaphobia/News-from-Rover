@@ -1,9 +1,9 @@
-require('dotenv').config();
+import '../css/styles.css'
 
 // API
 
-let NEWS_API = process.env.NEWS_API
-let NEWS_LINK = process.env.NEWS_LINK
+NEWS_API = 'https://hacker-news.firebaseio.com/v0/newstories.json'
+NEWS_LINK = 'https://hacker-news.firebaseio.com/v0/item/'
 
 // Variabili
 
