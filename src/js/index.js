@@ -1,5 +1,3 @@
-import '../css/styles.css'
-
 require('dotenv').config();
 
 // API
