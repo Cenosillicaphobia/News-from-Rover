@@ -2,7 +2,7 @@
 
 [Site Link](https://newsfromrover.netlify.app)
 
-Una web page semplice ed immediata con lo scopo di fronire sempre le ultime news in abito tech!
+Una web page semplice ed immediata con lo scopo di fornire sempre le ultime news in abito tech!
 
 ---
 
