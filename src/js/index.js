@@ -5,8 +5,8 @@ const lodash = require('lodash');
 
 // API
 
-const NEWS_API = 'https://hacker-news.firebaseio.com/v0/newstories.json'
-const NEWS_LINK = 'https://hacker-news.firebaseio.com/v0/item/'
+const NEWS_API = process.env.NEWS_API
+const NEWS_LINK = process.env.NEWS_LINK
 
 // Variabili
 
